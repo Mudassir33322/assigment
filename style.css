@@ -1,0 +1,1506 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Uper Header */
+.uper-header{
+    width: 100%;
+    height: 3vw;
+    background-color: rgb(93,136,52);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.p2{
+    width: 15vw;
+    height: 5vw;
+    /* top: 0; */
+    gap: 0.5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.p1 {
+    width: 35vw;
+    height: 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+.t1,.t2{
+    font-size: 1.2vw;
+    color: #fff;
+    cursor: pointer;
+}
+.ic1{
+    font-size: 1.5vw;
+    gap: 1vw;
+    color: white;
+}
+.icon1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+/* Header */
+header{
+    width: 100%;
+    padding: 1vw 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+.uper-logo{
+    width: 20vw;
+    height: 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    width: 12vw;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 1.3vw;
+    color: #000000b5;
+    font-weight: 500;
+    transition: 0.3s;
+}
+nav ul li a:hover{
+    color: rgb(93,136,52);
+}
+.t4{
+    border: none;
+    text-decoration: none;
+    font-size: 1.3vw;
+    color: #000000b5;
+    font-weight: 500;
+    transition: 0.3s;
+}
+option{
+    size: 20vw;
+    color: green;
+    font-size: 1.3vw;    
+    font-weight: bolder;
+}
+.uper-btn{
+    width: 20vw;
+    height: 5vw;
+    /* background-color: #4c702a; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1vw;
+}
+.btn1{
+    width: 4vw;
+    height: 4vw;
+    border: 0.1vw solid rgba(128, 128, 128, 0.63);
+    border-radius: 0.6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+.btn1:hover{
+    border: 0.1vw solid rgb(93,136,52);
+    box-shadow: 0 0 1vw rgba(93,136,52,0.5);
+    transition: 0.3s;
+}
+.count{
+    position: absolute;
+    bottom: 2.1vw;
+    right: 0.2vw;
+    background: green;
+    color: #fff;
+    font-size: 0.7vw;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 1.5vw;
+    height: 1.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ic2{
+    color: rgb(93,136,52);
+    font-size: 1.2vw;
+}
+
+/* Slider */
+.uper-slider{
+    width: 100%;
+    height: 50vw;
+    position: relative;
+    overflow: hidden;
+}
+.uper-slider img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: fade 12s infinite;
+}
+.i1{ animation-delay: 0s; }
+.i2{ animation-delay: 4s; }
+.i3{ animation-delay: 8s; }
+
+@keyframes fade {
+    0%{opacity:1;}
+    10%{opacity:1;}
+    30%{opacity:1;}
+    40%{opacity:1;}
+    100%{opacity:1;}
+}
+
+.slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(0,0,0,0.4); */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 1vw;
+}
+.uper-text {
+    width: 70%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.uper-para1{
+    width: 100%;
+    height: 5vw;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+
+.para1{
+    width: 45%;
+    height: 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    font-family: "Playfair Display";
+    font-size: 2.5vw;
+    font-weight: 500;
+    Color: rgb(93, 136, 52);
+}
+.uper-heading1{
+    width: 90%;
+    height: 15vw;
+}
+
+.heading1{
+    font-family: "Playfair Display";
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.759);
+    font-size: 5vw;
+    text-align: start;
+
+}
+.uper-btn2{
+    width: 90%;
+    height: 5vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1vw;
+}
+.btn2{
+    width: 10vw;
+    height: 4vw;
+    color: white;
+    background-color: #4c702a;
+    border-radius: 0.6vw;
+    font-size: 1.2vw;
+    transition: 0.3s;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.1vw solid rgba(128, 128, 128, 0.472);
+    gap: 1vw;
+}
+.btn2:hover{
+    
+    background: white;
+    color: #4c702a;
+    border: 0.1vw solid #4c702a;
+    box-shadow: 0 0 1vw rgba(76,112,42,0.5);
+}
+.btn3{
+    width: 12vw;
+    height: 4vw;
+    background-color: white;
+    color: #4c702a;
+    border: 0.1vw solid rgba(128, 128, 128, 0.472);
+    border-radius: 0.6vw;
+    font-size: 1.2vw;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 1vw;
+}
+.btn3:hover{
+    background: #4c702a;
+    color: white;
+    border: 0.1vw solid #4c702a;
+
+}
+.uper-images{
+    width: 100%;
+    height: 180vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.contanier{
+    width: 80%;
+    height: 180vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+.uper-img1{
+    width: 100%;
+    height: 40vw;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+.uper-img1:hover .i1{
+    transition: 2s;
+    transform: scale(1.1);
+    color: white;
+}
+.i1{
+    width: 100%;
+    height: 100%;
+}
+.uper-div1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    transition: 1.5s;
+    position: absolute;
+    top: 0;
+    z-index:0;
+}
+.uper-img1:hover .uper-div1{
+    background-color: rgba(93, 136, 52, 0.474);
+}
+.uper-para2{
+    width: 50vw;
+    height: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.para2{
+    font-size: 3vw;
+    font-family: Poppins;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(93,136,52);
+}
+.uper-img1:hover .para2{
+    color: white;
+}
+.uper-heading2{
+    width: 50vw;
+    height: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.uper-div1:hover .heading2{
+    color: white;
+}
+.heading2{
+    font-family: "Playfair Display";
+    font-size: 7vw;
+    color: #000;
+    font-weight: 600;
+}
+.uper-btn3{
+    width: 100%;
+    height: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn4{
+    width: 17vw;
+    height: 6vw;
+    background-color: rgb(93,136,52);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 600;
+    font-size: 2vw;
+    border-radius: 0.4vw;
+    cursor: pointer;
+    color: white;
+}
+.btn4:hover{
+    width: 17vw;
+    height: 6vw;
+    transition: all 0.8s;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 600;
+    font-size: 2vw;
+    border-radius: 0.4vw;
+    cursor: pointer;
+    color: rgb(93,136,52);
+}
+.uper-img2{
+    width: 100%;
+    height: 40vw;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.p3{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.p4{
+    width: 50%;
+    height: 100%;
+}
+.i2{
+    width: 100%;
+
+}
+.p3:hover .i2{
+    transition: 2s;
+    transform: scale(1.1);
+    color: white;
+}
+.uper-text2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.p3:hover , .uper-text2:hover {
+    transition: 1s;
+    background-color: rgba(93, 136, 52, 0.259);
+}
+.uper-heading3{
+    width: 100%;
+    height: 9vw;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading3{
+    font-family: "Playfair Display";
+    font-size: 5vw;
+    color: rgba(0, 0, 0, 0.815);
+    font-weight: 600;
+}
+.uper-para3{
+    width: 100%;
+    height: 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.para3{
+    font-size: 3vw;
+    font-family: Poppins;
+    font-weight: 600;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.809);
+}
+.p3:hover .heading3 {
+    transition: 1s;
+    color: white;
+}
+.p3:hover .para3 {
+    transition: 1s;
+    color: white;
+}
+.p4{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.i3{
+    width: 100%;
+    height: 100%;
+}
+.p4:hover .i3{
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+.uper-text3{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.p4:hover .uper-text3:hover{
+    transition: 1s;
+    background-color: rgba(93, 136, 52, 0.483);
+}
+.uper-heading4{
+    width: 100%;
+    height: 7vw;
+    /* background-color: red; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-left: 2vw;
+}
+.heading4{
+    font-family: "Playfair Display";
+    font-weight: 600;
+    font-size: 3vw;
+    color: black;
+    rotate: 90deg;
+}
+.p4:hover .heading4{
+    transition: 1s;
+    color: white;
+}
+.uper-heading5{
+    width: 100%;
+    height: 7vw;
+    /* background-color: red; */
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+.heading5{
+    font-family: "Playfair Display";
+    font-weight: 600;
+    font-size: 3vw;
+    color: black;
+    rotate: 90deg;
+}
+.uper-div2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    transition: 1.5s;
+    position: absolute;
+    top: 0;
+    z-index:0;
+}
+.uper-img1:hover .uper-div2{
+    background-color: rgba(93, 136, 52, 0.474);
+}
+.uper-div2:hover .heading2{
+    color: white;
+}
+.uper-card{
+    width: 100%;
+    height: 35vw;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.uper-card1{
+    width: 100%;
+    height: 45vw;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.card-row {
+    width: 90vw;
+    height: 30vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw; 
+}
+
+.c1 {
+    flex: 0 0 auto; /* fix card width, no shrink */
+    width: 19vw;
+    height: 29vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.uper-heading6{
+    width: 100% !important;
+    height: 20vw !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.heading6{
+    font-size: 4vw;
+    font-family: "Playfair Display";
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+.nav{
+    width: 100%;
+    height: 7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;    
+}
+.l1{
+    font-size: 1.9vw;
+    font-weight: 600;
+    font-family: "Playfair Display", serif;
+    cursor: pointer;
+}
+.l1 a{
+    text-decoration: none;
+    color: rgba(18, 18, 18, 0.814);
+}
+.l1 a:hover{
+    color: rgb(93, 136, 52);
+    transition: 0.5s;
+}
+
+
+
+.uper-image1{
+    width: 100%;
+    height: 57%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-size: cover;
+    background-image: url(./i7.png);
+    background-position: center;  
+    background-color: #4c702a;  
+    position: relative;
+    border-radius: 1vw;
+    gap: 1.2vw;
+}
+.uper-image1:hover{
+    background-image: url(./i8.png);
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+.uper-image2{
+    width: 100%;
+    height: 57%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-size: cover;
+    background-image: url(./i9.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position: center;  
+    background-color: #4c702a;  
+    position: relative;
+    border-radius: 1vw;
+    gap: 1.2vw;
+}
+.uper-image2:hover{
+    background-image: url(./i10.png);
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+
+.uper-image3{
+    width: 100%;
+    height: 57%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-size: cover;
+    background-image: url(./i11.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position: center;  
+    background-color: #4c702a;  
+    position: relative;
+    border-radius: 1vw;
+    gap: 1.2vw;
+}
+.uper-image3:hover{
+    background-image: url(./i12.png);
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+
+.uper-image4{
+    width: 100%;
+    height: 57%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-size: cover;
+    background-image: url(./i13.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+    background-color: #4c702a;  
+    position: relative;
+    border-radius: 1vw;
+    gap: 1.2vw;
+}
+.uper-image4:hover{
+    background-image: url(./i14.png);
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+.uper-text4{
+    width: 100%;
+    height: 42%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    width: 2.3vw;
+    height: 2.3vw;
+    border-radius: 50%;
+    margin-top: 4vw;
+    background-color: none;
+
+}
+.uper-image1:hover 
+.icon{
+    transition: 1s;
+    background-color: #4c702a;
+}
+
+.icon{
+    width: 2.3vw;
+    height: 2.3vw;
+    border-radius: 50%;
+    margin-top: 4vw;
+    background-color: none;
+
+}
+.uper-image2:hover 
+.icon{
+    transition: 1s;
+    background-color: #4c702a;
+}
+
+.icon{
+    width: 2.3vw;
+    height: 2.3vw;
+    border-radius: 50%;
+    margin-top: 4vw;
+    background-color: none;
+
+}
+.uper-image3:hover 
+.icon{
+    transition: 1s;
+    background-color: #4c702a;
+}
+
+.icon{
+    width: 2.3vw;
+    height: 2.3vw;
+    border-radius: 50%;
+    margin-top: 4vw;
+    background-color: none;
+
+}
+.uper-image4:hover 
+.icon{
+    transition: 1s;
+    background-color: #4c702a;
+}
+.rating{
+    width: 100vw;
+    height: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.ic3{
+    color: yellow;
+    font-size: 1vw;
+}
+.heading7{
+    width: 100%;
+    height: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Playfair Display";
+    font-weight: 600;
+    font-size: 1.5vw;
+}
+.para{
+    color: gray;
+    font-size: 1.2vw;
+}
+
+.uper-btn4{
+    width: 100%;
+    height: 15vw;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn5{
+    width: 17vw;
+    height: 4vw;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.2vw;
+    font-family: "Playfair Display";
+    font-size: 1.4vw;
+    color: white;
+    background-color: #4c702a;
+    font-weight: 600;
+}
+.btn5:hover{
+    background-color: white;
+    color: #4c702a;
+    border: 0.2vw solid #4c702a;
+    transition: 1s;
+}
+
+.uper-clock{
+    width: 100%;
+    height: 45vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock{
+    width: 82%;
+    height: 32vw;
+    background-image: url(./clock.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.clo {
+  display: flex;
+  justify-content: center;
+  margin: 2vw 0;
+  color: #4c702a;
+
+}
+
+.uper-heading7{
+    width: 80%;
+    height: 12vw;
+    /* background-color: #4c702a; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.heading8{
+    font-family: "Playfair Display";
+    font-size: 4vw;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.859);
+}
+.uper-btn5{
+    width: 100%;
+    height: 7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clo{
+    width: 100%;
+    height: 7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn6{
+    width: 15vw;
+    height: 5vw;
+    background-color: #4c702a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Playfair Display";
+    font-size: 1.3vw;
+    font-weight: 600;
+    color: white;
+}
+.btn6:hover{
+    background-color: white;
+    color: #4c702a;
+    border: 0.2vw solid #4c702a;
+    transition: 1s;
+}
+.carousel-container {
+  width: 80%;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-track {
+  display: flex;
+  gap: 1vw;
+  transition: transform 0.5s ease;
+  cursor: grab;
+}
+.card-track:active { cursor: grabbing; }
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #4c702a;
+  color: white;
+  border: none;
+  font-size: 2vw;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  width: 4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4vw;
+}
+.arrow.left { left: 0.5vw; }
+.arrow.right { right:1vw; }
+
+.uper-info{
+    width: 100% !important;
+    height: 30vw !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.info1{
+    width: 50%;
+    height: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-image: url(./info);
+    background-size: 100% 100%;
+}
+.uper-heading8{
+    width: 80%;
+    height: 4vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 2.3vw;
+    font-family: "Playfair Display";
+    color: rgb(33, 37, 41);
+}
+.uper-para4{
+    width: 80%;
+    height: 2vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.para4{
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 500;
+    font-family: 1.5vw;
+    color: rgb(33, 37, 41);
+}
+.uper-input{
+    width: 80%;
+    height: 8vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: end;
+}
+.inp1{
+    width: 70%;
+    height: 4vw;
+    padding-left: 2vw;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: #4c702a;
+    outline: none;
+    border: none;
+}
+input::placeholder{
+    padding-left:0.3vw;
+    color: #4c702a;
+    font-size: 1.2vw;
+}
+.btn7{
+    width: 10vw;
+    height: 4vw;
+    background-color: #4c702a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+.btn7:hover{
+    background-color: white;
+    color: #4c702a;
+    border: 0.2vw solid #4c702a;
+    transition: 1s;
+    box-shadow: 0 0 1vw rgba(76,112,42,0.5);
+}
+.info2{
+    width: 50%;
+    height: 25vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+    overflow: hidden;
+}
+.uper-in1{
+    width: 16.5vw;
+    height: 100%;
+    background-image: url(./info2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.uper-in1:hover{
+    transition: 1s;
+    transform: scale(1.1);
+}
+.insta{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+}
+.uper-in1:hover .insta{
+    background-color: rgba(9, 8, 8, 0.516);
+    background-image: url(./insta.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: 2.5vw;
+    transition: 0.9s;
+
+}
+.uper-in2{
+    width: 16.5vw;
+    height: 100%;
+    background-image: url(./info3);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+}
+
+
+.uper-in3{
+    width: 16.5vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.p5{
+    width: 100%;
+    height: 50%;
+    background-image: url(./info3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+.p5:hover{
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+.p5:hover .insta1{
+    width: 100%;
+    height: 100%;
+    background-image: url(./insta.png);
+     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    overflow: hidden;
+
+}
+
+.p6{
+    width: 100%;
+    height: 50%;
+    background-image: url(./info4.png);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.p6:hover{
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+.p6:hover .insta1{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.516);
+    background-image: url(./insta.png);
+     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    overflow: hidden;
+
+}
+
+.p7{
+    width: 100%;
+    height: 50%;
+    background-image: url(./info5..png);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.p7:hover{
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+.p7:hover .insta1{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.516);
+    background-image: url(./insta.png);
+     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    overflow: hidden;
+    background-size: 3vw;
+
+}
+.p8{
+    width: 100%;
+    height: 50%;
+    background-image: url(./info6..png);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.p8:hover{
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+.p8:hover .insta1{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.516);
+    background-image: url(./insta.png);
+     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    overflow: hidden;
+
+}
+.c2 {
+    width: 25vw;
+    height: 20vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    border-radius: 1vw;
+    border: 0.1vw solid rgba(128, 128, 128, 0.321);
+    overflow: hidden;
+}
+.card-row1 {
+    width: 80%;
+    height: 22vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    gap: 1vw;
+
+}
+.uper-image5{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-image: url(./i9.png);
+    background-position: center;  
+    background-color: #4c702a;  
+    gap: 1.2vw;
+    border-top-left-radius: 1vw;
+    border-bottom-left-radius: 1vw;
+    overflow: hidden;
+    position: relative;
+}
+.uper-image5:hover{
+    background-image: url(./i18.png);
+    transition: 1s;
+    transform: scale(1.1);
+}
+.uper-text5{
+    width: 40%;
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3vw;
+}
+.uper-box{
+    width: 100%;
+    height: 3vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+.uper-card2{
+    width: 100%;
+    height: 25vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.uper-card3{
+    width: 100%;
+    height: 20vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.heading10{
+    font-family: "Playfair Display";
+    font-size: 1vw;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.815);
+}
+.box{
+    width: 20%;
+    height: 1.8vw;
+    border: 0.1vw solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.3vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.ic4{
+    font-size: 0.8vw;
+    cursor: pointer;
+}
+.box:hover{
+    transition: 1s;
+    color: white;
+    background-color: #4c9606;
+}
+.box:hover .ic4{
+    transition: 1s;
+    color: white;
+}
+.uper-comment{
+    width: 100%;
+    height: 70vw;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+.c5{
+    width: 30%;
+    height: 44vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.1vw solid rgba(128, 128, 128, 0.266);
+    overflow: hidden;
+}
+.uper-para5{
+    width: 90%;
+    height: 3vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.para5{
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1.5vw;
+    color: rgb(85, 139, 47);
+    font-weight: 500;
+}
+.uper-heading10{
+    width: 90%;
+    height: 4vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.heading11{
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    font-size: 2vw;
+    color: rgba(0, 0, 0, 0.848);
+}
+.uper-para6{
+    width: 90%;
+    height: 5vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.para6{
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 400;
+    font-size: 1.2vw;
+    color: rgb(96, 96, 96);
+}
+.uper-info1{
+    width: 90%;
+    height: 10vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.uper-client{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client{
+    width: 4vw;
+    height: 4vw;
+    background-color: aliceblue;
+    background-image: url(./person-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+.uper-text6{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.t5{
+    font-family: "Playfair Display";
+    color: rgb(33, 37, 41);
+    font-size: 1.4vw;
+    font-weight: 600;
+}
+.t6{
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 400;
+    font-size: 1.2vw;
+    color: rgb(96, 96, 96);
+}
+.uper-img6{
+    width: 90%;
+    height: 20vw;
+    background-color: #4c9606;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.c5:hover .uper-img6{
+    overflow: hidden;
+    transition: 1s;
+    transform: scale(1.1);
+}
+.c5:hover .shadow{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.561);
+    transition: 1s;
+    overflow: hidden;
+    z-index: 2;
+    position: absolute;
+}
+.i0{
+    position: absolute;
+    overflow: hidden;
+}
+.uper-d{
+    width: 100%;
+    height: 30vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 0.1vw solid black;
+}
+.uper-info2{
+    width: 90%;
+    height: 15vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+.s1{
+    width: 30%;
+    height:7vw ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.client1{
+ 
+    background-image: url./truck.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
